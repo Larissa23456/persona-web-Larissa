@@ -1,7 +1,7 @@
 body {
-    background-color: #000;
+    background-color: #3a2f2f;
     display: flex;
-    justify-content: center;
+
     margin: 0;
     padding: 0;
 }
@@ -9,11 +9,21 @@ body {
 .perfil {
     display: flex;
     flex-direction: column;
+
     justify-content: center;
     align-items: center;
-    color: white;
+    color: rgb(143, 48, 48);
+    width: 800px;
+    height: 700px;
+    margin: 50px;
+    border-radius: 5%;
+    padding: 20px;
+    background-color: #fce6e6c0;
+    box-shadow: 10px 5px #f3efefe0;
     
 }
+
+#
 
 #img-perfil {
     max-height: 200px;
