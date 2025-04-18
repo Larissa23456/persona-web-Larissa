@@ -36,6 +36,15 @@ p, li {
     margin-bottom: 5px;
 }
 
+a {
+    color: rgb(143, 48, 48);
+    text-decoration: none; 
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 
 .perfil-container {
     display: flex;
