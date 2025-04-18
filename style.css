@@ -1,32 +1,95 @@
 body {
     background-color: #3a2f2f;
-    display: flex;
-
     margin: 0;
     padding: 0;
-}
-
-.perfil {
+    color: rgb(143, 48, 48);
     display: flex;
-    flex-direction: column;
-
     justify-content: center;
     align-items: center;
-    color: rgb(143, 48, 48);
-    width: 800px;
-    height: 700px;
-    margin: 50px;
-    border-radius: 5%;
-    padding: 20px;
+    flex-direction: column;
+}
+
+h1 {
+    font-family: "Aladin", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    size: 15px;
+}
+
+p {
+    font-family: "Antic", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    font-style: normal;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    border-radius: 20px;
+    padding: 40px;
     background-color: #fce6e6c0;
     box-shadow: 10px 5px #f3efefe0;
-    
+    width: 1000px;
+
 }
 
-#
+.perfil-container {
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.perfil-container p, h1 {
+    margin: 2px 0; 
+}
+
+.introducao-container {
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.fotos-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+    gap: 20px; 
+    flex-wrap: wrap;
+}
+
+#fotos {
+    width: 200px;
+    height: 200px;
+    object-fit: cover; 
+    border-radius: 50%
+}
 
 #img-perfil {
-    max-height: 200px;
-    border-radius: 50%;
+    height: 200px;
+    border-radius: 100%;
+    margin: 0 0 10px;
+    box-shadow: 5px 5px #7775755d;
 }
 
+.teia {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('./img/teia-de-aranha.png') no-repeat left top;
+    background-size: contain;
+    z-index: -1; /* Coloca a teia atrás do conteúdo */
+  }
+
+.footer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 5px 0;
+    background-color: rgb(157, 131, 54);
+    color: rgb(0, 0, 0);
+}
