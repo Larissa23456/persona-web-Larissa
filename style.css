@@ -3,10 +3,19 @@ body {
     margin: 0;
     padding: 0;
     color: rgb(143, 48, 48);
+}
+
+#container {
+    width: 1000px;
+    margin: 30px auto; /* centraliza horizontalmente */
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    padding: 40px;
+    border-radius: 20px;
+    background-color: #fce6e6c0;
+    box-shadow: 5px 5px #a9282844;
+    border-color: rgb(0, 0, 0);
 }
 
 h1 {
@@ -16,25 +25,17 @@ h1 {
     size: 15px;
 }
 
-p {
+p, li {
     font-family: "Antic", sans-serif;
     font-weight: 400;
     font-size: 20px;
     font-style: normal;
-}
-
-#container {
     display: flex;
+    text-align: justify;
     justify-content: center;
-    align-items: center;
-    margin: 30px;
-    border-radius: 20px;
-    padding: 40px;
-    background-color: #fce6e6c0;
-    box-shadow: 10px 5px #f3efefe0;
-    width: 1000px;
-
+    margin-bottom: 5px;
 }
+
 
 .perfil-container {
     display: flex;
@@ -74,6 +75,33 @@ p {
     box-shadow: 5px 5px #7775755d;
 }
 
+.bloco-texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+#titulo-texto {
+    text-align: center;
+    color: rgb(143, 48, 48);
+}
+
+.imagens-livros {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.imagens-livros img {
+    height: 200px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
 .teia {
     position: absolute;
     top: 0;
@@ -86,6 +114,8 @@ p {
   }
 
 .footer {
+    font-family: "Antic", sans-serif;
+    font-weight: 400;
     display: flex;
     justify-content: center;
     width: 100%;
